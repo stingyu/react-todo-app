@@ -1,28 +1,106 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 582245 */
+  src: url('//at.alicdn.com/t/font_582245_z1i8x56llyirizfr.eot');
+  src: url('//at.alicdn.com/t/font_582245_z1i8x56llyirizfr.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_582245_z1i8x56llyirizfr.woff') format('woff'),
+  url('//at.alicdn.com/t/font_582245_z1i8x56llyirizfr.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_582245_z1i8x56llyirizfr.svg#iconfont') format('svg');
+}
+@keyframes rotate {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+ol,ul {
+  list-style: none;
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size: 25px;
+    color: #999;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  height:100vh;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
 .App-title {
-  font-size: 1.5em;
+  font-size :56px;
+  color: #900;
+  font-weight: 400
 }
 
-.App-intro {
-  font-size: large;
+.ipt-wrap,.list-wrap {
+  width: 500px;
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0 0 4px 0 rgba(0,0,0,0.2);
+  border-radius: 10px; 
 }
+.ipt-wrap {
+  position: relative;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px; 
+  margin-bottom: 20px;
+  background-color: #fff;
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+}
+.add {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(255,0,0,0.3);
+    color: #fff;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    padding: 0 60px 0 0;
+    text-indent: 18px;
+    font-size: 22px;
+    text-transform: capitalize;
+    border-radius: 5px 25px 25px 5px;
+}
+.add-btn {
+  position: absolute;
+    right: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: 3;
+    appearance: none;
+    border: none;
+    outline: none;
+    box-shadow: 2px 0 4px 0 rgba(0,0,0,0.19);
+    cursor: pointer;    
+
+}
+.iconfont:hover {
+  animation: rotate 1s alternate infinite;
+}
+.list-wrap {
+
+}
+.todo-list>li{
+   width: 100%;
+   height: 80px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   box-shadow: 0 0 4px 0 rgba(0,0,0,0.2);
+   border-radius: 5px;
+
+}
+.todo-list .text {
+  
 }
